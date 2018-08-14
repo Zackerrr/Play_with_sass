@@ -1,0 +1,17 @@
+$bg-color:#f7f7f7;
+
+$darkgrey:#515151;
+$mediumgrey:#7c7c7c;
+$ligthgrey:#ebebeb;
+
+$mainfont:'Sawarabi Mincho', sans-serif;
+$headersfont:'Josefin Sans', sans-serif;
+
+
+ /* grid system */
+
+@mixin gridsystem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
