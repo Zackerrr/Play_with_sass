@@ -1,0 +1,32 @@
+@import 'helpers/variables';
+@import 'helpers/display';
+
+.header {
+    @include griditem(1,end,1,2);
+}
+
+.header_bar {
+    @include flexnav;
+}
+
+.header_logo {
+    font-family: $headersfont;
+    font-size: 50px;
+    font-weight: bold;
+    color: $mediumgrey;
+}
+
+.header_nav {
+    @include flexnav;
+    width:40%;
+    font-family:$secondfont;
+    font-size:18px;
+    color:$darkgrey;
+    align-items: flex-end;
+}
+
+.header_nav span {
+    font-family:$headersfont;
+    font-weight: bold;
+    font-size: 20px;
+}

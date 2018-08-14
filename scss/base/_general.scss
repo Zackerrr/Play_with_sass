@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    font-family: $mainfont;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+.container {
+    @include gridsystem;
+    width:90%;
+    margin:auto;
+    margin-top: 50px;
+}

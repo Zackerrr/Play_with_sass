@@ -1,0 +1,20 @@
+@mixin gridsystem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 3fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+@mixin griditem ($startcol, $endcol, $startrow, $endrow) {
+    grid-column-start: $startcol;
+    grid-column-end: $endcol;
+    grid-row-start: $startrow;
+    grid-row-end:$endrow;
+}
+
+
+@mixin flexnav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

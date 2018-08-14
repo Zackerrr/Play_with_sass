@@ -1,54 +1,21 @@
-@import '_reset.scss';
-@import '_settings.scss';
+@import 'helpers/variables';
+@import 'helpers/display';
+
+@import 'base/reset';
+@import 'base/general';
+
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Sawarabi+Mincho|Lato');
 
-* {
-    box-sizing: border-box;
-    font-family: $mainfont;
-}
 
-body {
-    background-color: $bg-color;
-}
 
-.container {
-    @include gridsystem;
-    width:90%;
-    margin:auto;
-    margin-top: 50px;
-}
 
-/******************* HEADER **************************/
+@import 'sections/header';
 
-.header {
-    @include griditem(1,end,1,2);
-}
+@import '_settings.scss';
 
-.header_bar {
-    @include flexnav;
-}
 
-.header_logo {
-    font-family: $headersfont;
-    font-size: $font50;
-    font-weight: bold;
-    color: $mediumgrey;
-}
 
-.header_nav {
-    @include flexnav;
-    width:40%;
-    font-family:$navfont;
-    font-size:18px;
-    color:$darkgrey;
-    align-items: flex-end;
-}
 
-.header_nav span {
-    font-family:$headersfont;
-    font-weight: bold;
-    font-size: 20px;
-}
 
 
 .hero {

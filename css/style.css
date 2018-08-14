@@ -80,16 +80,6 @@ button::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/*variables*/
-a {
-  text-decoration: none;
-  color: inherit; }
-
-a:hover {
-  text-decoration: none; }
-
-/* grid system */
-/*nav*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -101,13 +91,12 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 60px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px 3fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
   width: 90%;
   margin: auto;
   margin-top: 50px; }
 
-/******************* HEADER **************************/
 .header {
   grid-column-start: 1;
   grid-column-end: end;
@@ -156,6 +145,15 @@ body {
   font-weight: bold;
   font-size: 20px; }
 
+/*variables*/
+a {
+  text-decoration: none;
+  color: inherit; }
+
+a:hover {
+  text-decoration: none; }
+
+/* grid system */
 .hero {
   grid-column-start: 1;
   grid-column-end: end;
