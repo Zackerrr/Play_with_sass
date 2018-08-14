@@ -1,6 +1,6 @@
 @import '_reset.scss';
 @import '_settings.scss';
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Sawarabi+Mincho');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Sawarabi+Mincho|Lato');
 
 * {
     box-sizing: border-box;
@@ -13,4 +13,44 @@ body {
 
 .container {
     @include gridsystem;
+    width:90%;
+    margin:auto;
+    margin-top: 50px;
+}
+
+/******************* HEADER **************************/
+
+.header {
+    @include griditem(1,end,1,2);
+}
+
+.header_bar {
+    @include flexnav;
+}
+
+.header_logo {
+    font-family: $headersfont;
+    font-size: $font50;
+    font-weight: bold;
+    color: $mediumgrey;
+}
+
+.header_nav {
+    @include flexnav;
+    width:40%;
+    font-family:$navfont;
+    font-size:18px;
+    color:$darkgrey;
+    align-items: flex-end;
+}
+
+.header_nav span {
+    font-family:$headersfont;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.hero {
+    @include griditem(1,end,2,3)
 }

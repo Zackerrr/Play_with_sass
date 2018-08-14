@@ -1,11 +1,27 @@
+/*variables*/
+
 $bg-color:#f7f7f7;
 
 $darkgrey:#515151;
 $mediumgrey:#7c7c7c;
 $ligthgrey:#ebebeb;
 
+$font50:50px;
+
+
 $mainfont:'Sawarabi Mincho', sans-serif;
 $headersfont:'Josefin Sans', sans-serif;
+$navfont:'Lato', sans-serif;
+
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 
  /* grid system */
@@ -13,5 +29,28 @@ $headersfont:'Josefin Sans', sans-serif;
 @mixin gridsystem {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
 }
+
+@mixin griditem ($startcol, $endcol, $startrow, $endrow) {
+    grid-column-start: $startcol;
+    grid-column-end: $endcol;
+    grid-row-start: $startrow;
+    grid-row-end:$endrow;
+}
+
+/*nav*/
+
+@mixin flexnav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
