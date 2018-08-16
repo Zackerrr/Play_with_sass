@@ -1,0 +1,30 @@
+@import 'helpers/variables';
+
+.btn {
+    @include flex;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: smaller;
+}
+
+.btn_icon {
+    width:35px;
+    height: 35px;
+    border-radius:50%;
+    background-color: $grey;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 35px;
+    margin-right: 5px;
+    align-self: center;
+   
+    p {
+        position: relative;
+        top:-6px;
+    }
+    
+    span {
+        font-weight: bold;
+    } 
+}
+

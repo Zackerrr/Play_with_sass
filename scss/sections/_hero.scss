@@ -1,5 +1,6 @@
 @import 'helpers/variables';
 @import 'helpers/display';
+@import 'components/buttons';
 
 .hero {
      @include griditem(1,end,1,2);
@@ -25,7 +26,20 @@
     }
     
     img {
+        float:right;
         position: relative;
-        right:0;
+        top:-400px;
+        right: -11%;
+    }
+}
+
+.hero_text {
+    width:38%;
+    margin-left: 110px;
+    font-family: $secondfont;
+    line-height: 33px;
+    
+    span {
+        font-weight: bold;
     }
 }

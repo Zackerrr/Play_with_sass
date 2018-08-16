@@ -1,8 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Sawarabi+Mincho|Lato");
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: smaller; }
+
+.btn_icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #bbbbbb;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 35px;
+  margin-right: 5px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  .btn_icon p {
+    position: relative;
+    top: -6px; }
+  .btn_icon span {
+    font-weight: bold; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Sawarabi+Mincho|Lato");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -83,7 +115,8 @@ button::-moz-focus-inner {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Sawarabi Mincho", sans-serif; }
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-size: 25px; }
 
 body {
   background-color: #f7f7f7; }
@@ -159,6 +192,38 @@ a:hover {
   font-weight: bold;
   font-size: 20px; }
 
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: smaller; }
+
+.btn_icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #bbbbbb;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 35px;
+  margin-right: 5px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  .btn_icon p {
+    position: relative;
+    top: -6px; }
+  .btn_icon span {
+    font-weight: bold; }
+
 .hero {
   grid-column-start: 1;
   grid-column-end: end;
@@ -181,8 +246,18 @@ a:hover {
   top: -35px; }
 
 .hero img {
+  float: right;
   position: relative;
-  right: 0; }
+  top: -400px;
+  right: -11%; }
+
+.hero_text {
+  width: 38%;
+  margin-left: 110px;
+  font-family: "Lato", sans-serif;
+  line-height: 33px; }
+  .hero_text span {
+    font-weight: bold; }
 
 .footer {
   grid-column-start: 1;
