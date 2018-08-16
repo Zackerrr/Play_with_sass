@@ -88,6 +88,12 @@ button::-moz-focus-inner {
 body {
   background-color: #f7f7f7; }
 
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -139,6 +145,12 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
+
+.header_nav a:hover {
+  font-weight: bold;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
 
 .header_nav span {
   font-family: "Josefin Sans", sans-serif;

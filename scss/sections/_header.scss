@@ -6,7 +6,7 @@
 }
 
 .header_bar {
-    @include flexnav;
+    @include flex;
 }
 
 .header_logo {
@@ -17,7 +17,7 @@
 }
 
 .header_nav {
-    @include flexnav;
+    @include flex;
     width:40%;
     font-family:$secondfont;
     font-size:18px;
@@ -25,8 +25,14 @@
     align-items: flex-end;
 }
 
+.header_nav a:hover {
+    font-weight: bold;
+    transition: $hovertrans;
+}
+
 .header_nav span {
     font-family:$headersfont;
     font-weight: bold;
     font-size: 20px;
 }
+
