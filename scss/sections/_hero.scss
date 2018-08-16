@@ -1,0 +1,31 @@
+@import 'helpers/variables';
+@import 'helpers/display';
+
+.hero {
+     @include griditem(1,end,1,2);
+}
+
+.hero {
+    
+    h1 {
+        color:$ligthgrey;
+        font-size: 200px;
+        font-family: $headersfont;
+        margin-top: 100px;
+    }
+    
+    h3 {
+        color:$darkgrey;
+        font-size: 40px;
+        font-family: $headersfont;
+        font-weight: bold;
+        margin-left: 300px;
+        position: relative;
+        top:-35px;     
+    }
+    
+    img {
+        position: relative;
+        right:0;
+    }
+}

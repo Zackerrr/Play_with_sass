@@ -1,0 +1,6 @@
+@import 'helpers/variables';
+@import 'helpers/display';
+
+.about {
+     @include griditem(1,end,3,4);
+}

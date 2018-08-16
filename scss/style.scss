@@ -6,18 +6,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Sawarabi+Mincho|Lato');
 
-
-
-
 @import 'sections/header';
-
-@import '_settings.scss';
-
-
+@import 'sections/hero';
+@import 'sections/footer';
 
 
 
 
-.hero {
-    @include griditem(1,end,2,3)
-}
+
+
+
+

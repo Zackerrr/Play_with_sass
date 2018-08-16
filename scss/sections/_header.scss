@@ -2,7 +2,8 @@
 @import 'helpers/display';
 
 .header {
-    @include griditem(1,end,1,2);
+    height: 60px;
+    width:100%;
 }
 
 .header_bar {
@@ -14,6 +15,7 @@
     font-size: 50px;
     font-weight: bold;
     color: $mediumgrey;
+    padding-left: 20px;
 }
 
 .header_nav {

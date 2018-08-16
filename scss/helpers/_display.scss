@@ -1,8 +1,7 @@
 @mixin gridsystem {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 3fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1,5fr 1fr 1fr 1fr 1fr;
 }
 
 @mixin griditem ($startcol, $endcol, $startrow, $endrow) {
