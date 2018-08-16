@@ -226,9 +226,18 @@ a:hover {
 
 .hero {
   grid-column-start: 1;
-  grid-column-end: end;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2; }
+
+.hero_img {
+  grid-column-start: 4;
+  grid-column-end: end;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-top: 30px;
+  height: 100%;
+  width: auto; }
 
 .hero h1 {
   color: #ebebeb;

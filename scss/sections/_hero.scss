@@ -3,7 +3,14 @@
 @import 'components/buttons';
 
 .hero {
-     @include griditem(1,end,1,2);
+     @include griditem(1,4,1,2);
+}
+
+.hero_img {
+    @include griditem(4,end,1,2);
+    margin-top: 30px;
+    height:100%;
+    width: auto;
 }
 
 .hero {
