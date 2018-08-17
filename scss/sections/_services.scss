@@ -1,0 +1,29 @@
+@import 'helpers/variables';
+@import 'helpers/display';
+
+.services {
+     @include griditem(1,4,8,9);
+    
+    margin-right: 30px;
+    
+    h3 {
+        font-family: $secondfont;
+        font-size:35px;
+        color:$darkgrey;
+        margin-bottom: 20px;
+        
+        span {
+            font-weight: bold;
+        }
+    }
+    
+    p {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+.services_img {
+     @include griditem(4,7,8,9);
+}
