@@ -1,0 +1,93 @@
+@import 'helpers/variables';
+@import 'helpers/display';
+@import 'components/buttons';
+
+.contact_img {
+    @include griditem(1,5,9,10);
+}
+
+.contact {
+    @include griditem(5,7,9,10);
+    
+    margin-top: 30px;
+    margin-left:20px;
+    
+    h3 {
+        color:$darkgrey;
+        font-size:35px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    
+    input {
+        background-color: transparent;
+        border:1px solid black;
+        margin-bottom:15px;
+        font-size: 15px;
+        height: 150px;
+        align-content: flex-start;
+    }
+     
+    ::placeholder {
+        color:black;
+        font-family: $headersfont;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+    
+    ::text {
+        color:red;
+    }
+    
+}
+
+.form_items {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+    input {
+        height: 50px;
+    }
+    
+    ::placeholder {
+        text-align: center;
+        padding: 0;
+    }
+    
+}
+
+ .form_item {
+        width:48%; 
+    }
+
+.form_btn {
+    background-color: $greyopacity;
+    border-radius:2px;
+    color:$darkgrey;
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+    width:55%;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.form_btn:hover {
+    background-color: $grey;
+    transition: $hovertrans;
+    
+    
+}
+
+

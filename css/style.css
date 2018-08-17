@@ -154,7 +154,7 @@ img {
 .grid_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 0.77fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.77fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-gap: 15px;
   width: 100%; }
 
@@ -202,9 +202,9 @@ img {
 
 .header_nav a:hover {
   font-weight: bold;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s; }
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s; }
 
 .header_nav span {
   font-family: "Josefin Sans", sans-serif;
@@ -449,6 +449,161 @@ img {
   grid-column-end: 7;
   grid-row-start: 8;
   grid-row-end: 9; }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: smaller; }
+
+.btn_icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #bbbbbb;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 35px;
+  margin-right: 5px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  .btn_icon p {
+    position: relative;
+    top: -6px; }
+  .btn_icon span {
+    font-weight: bold; }
+
+.btn_icon-db {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 15px #e2e2e2 solid; }
+
+.btn_trang {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 17.3px;
+  border-color: transparent transparent transparent #515151;
+  position: relative;
+  top: 8px;
+  left: 11px; }
+
+.contact_img {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 9;
+  grid-row-end: 10; }
+
+.contact {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  margin-top: 30px;
+  margin-left: 20px; }
+  .contact h3 {
+    color: #515151;
+    font-size: 35px;
+    margin-bottom: 20px; }
+  .contact p {
+    font-size: 18px;
+    line-height: 23px; }
+
+.contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px; }
+  .contact_form input {
+    background-color: transparent;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    font-size: 15px;
+    height: 150px;
+    -ms-flex-line-pack: start;
+        align-content: flex-start; }
+  .contact_form ::-webkit-input-placeholder {
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    padding-left: 10px; }
+  .contact_form :-ms-input-placeholder {
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    padding-left: 10px; }
+  .contact_form ::-ms-input-placeholder {
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    padding-left: 10px; }
+  .contact_form ::placeholder {
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    padding-left: 10px; }
+  .contact_form ::text {
+    color: red; }
+
+.form_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .form_items input {
+    height: 50px; }
+  .form_items ::-webkit-input-placeholder {
+    text-align: center;
+    padding: 0; }
+  .form_items :-ms-input-placeholder {
+    text-align: center;
+    padding: 0; }
+  .form_items ::-ms-input-placeholder {
+    text-align: center;
+    padding: 0; }
+  .form_items ::placeholder {
+    text-align: center;
+    padding: 0; }
+
+.form_item {
+  width: 48%; }
+
+.form_btn {
+  background-color: #e2e2e2;
+  border-radius: 2px;
+  color: #515151;
+  font-size: 15px;
+  font-weight: bold;
+  height: 50px;
+  width: 55%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer; }
+
+.form_btn:hover {
+  background-color: #bbbbbb;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s; }
 
 .footer {
   grid-column-start: 1;
