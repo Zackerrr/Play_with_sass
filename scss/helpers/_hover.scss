@@ -1,0 +1,24 @@
+.hover_img:hover {
+ 	opacity: 1;
+	-webkit-animation: flash 3s;
+	animation: flash 3s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+

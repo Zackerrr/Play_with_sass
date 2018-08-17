@@ -1,11 +1,14 @@
+@import 'base/reset';
+
 @import 'helpers/variables';
 @import 'helpers/display';
+@import 'helpers/hover';
+
 @import 'components/buttons';
 
-@import 'base/reset';
-@import 'base/general';
-
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Sawarabi+Mincho|Lato|Poiret+One');
+
+@import 'base/general';
 
 @import 'sections/header';
 @import 'sections/hero';
