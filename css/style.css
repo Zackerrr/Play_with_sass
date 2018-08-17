@@ -31,6 +31,21 @@
   .btn_icon span {
     font-weight: bold; }
 
+.btn_icon-db {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 15px #e2e2e2 solid; }
+
+.btn_trang {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 17.3px;
+  border-color: transparent transparent transparent #515151;
+  position: relative;
+  top: 8px;
+  left: 11px; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -129,7 +144,7 @@ a:hover {
   text-decoration: none; }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: auto;
   margin-top: 50px; }
 
@@ -137,6 +152,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1,5fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 100px;
   width: 100%; }
 
 .header {
@@ -224,6 +240,21 @@ a:hover {
   .btn_icon span {
     font-weight: bold; }
 
+.btn_icon-db {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 15px #e2e2e2 solid; }
+
+.btn_trang {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 17.3px;
+  border-color: transparent transparent transparent #515151;
+  position: relative;
+  top: 8px;
+  left: 11px; }
+
 .hero {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -232,7 +263,7 @@ a:hover {
 
 .hero_img {
   grid-column-start: 4;
-  grid-column-end: end;
+  grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 2;
   margin-top: 30px;
@@ -266,6 +297,39 @@ a:hover {
   font-family: "Lato", sans-serif;
   line-height: 33px; }
   .hero_text span {
+    font-weight: bold; }
+
+.about_img {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: auto; }
+
+.about {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3; }
+  .about .btn {
+    font-size: 40px; }
+    .about .btn span {
+      font-weight: bold; }
+
+.about_text {
+  margin-top: 100px; }
+  .about_text h3 {
+    color: #7c7c7c;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 8px; }
+  .about_text p {
+    font-family: "Lato", sans-serif;
+    font-size: 23px;
+    line-height: 33px; }
+  .about_text span {
     font-weight: bold; }
 
 .footer {

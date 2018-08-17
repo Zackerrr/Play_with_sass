@@ -1,7 +1,47 @@
 @import 'helpers/variables';
 @import 'helpers/display';
 
-.about {
-     @include griditem(1,end,2,3);
- 
+
+.about_img {
+    @include griditem(1,4,2,3);
+    width:100%;
+    height: auto;
 }
+
+
+.about {
+     @include griditem(5,7,2,3);
+    
+    .btn {
+        font-size:40px;
+        
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+
+.about_text {
+    
+    margin-top:100px;
+    
+    h3 {
+        color: $mediumgrey;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: $headersfont;
+        margin-bottom: 8px;
+    }
+    
+    p {
+        font-family: $secondfont;
+        font-size: 23px;
+        line-height: $mainline;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+}
+

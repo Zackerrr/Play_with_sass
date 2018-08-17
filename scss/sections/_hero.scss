@@ -7,7 +7,7 @@
 }
 
 .hero_img {
-    @include griditem(4,end,1,2);
+    @include griditem(4,7,1,2);
     margin-top: 30px;
     height:100%;
     width: auto;
@@ -44,7 +44,7 @@
     width:38%;
     margin-left: 110px;
     font-family: $secondfont;
-    line-height: 33px;
+    line-height: $mainline;
     
     span {
         font-weight: bold;
