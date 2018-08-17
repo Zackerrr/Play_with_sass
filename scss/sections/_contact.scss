@@ -12,6 +12,8 @@
     margin-top: 30px;
     margin-left:20px;
     
+    font-family: $basefont;
+    
     h3 {
         color:$darkgrey;
         font-size:35px;
@@ -28,6 +30,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    font-family: $headersfont;
+    color:black;
     
     input {
         background-color: transparent;
@@ -86,7 +90,7 @@
 .form_btn:hover {
     background-color: $grey;
     transition: $hovertrans;
-    
+ 
     
 }
 

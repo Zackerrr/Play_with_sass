@@ -14,13 +14,9 @@
     
     .btn {
         font-size:40px;
-        
-        span {
-            font-weight: bold;
-        }
+        font-family: $basefont;
     }
 }
-
 
 .about_text {
     
@@ -30,23 +26,18 @@
         color: $mediumgrey;
         font-size: 40px;
         font-weight: bold;
-        font-family: $headersfont;
         margin-bottom: 8px;
     }
     
     p {
-        font-family: $secondfont;
+        font-family: $basefont;
         font-size: 23px;
         line-height: $mainline;
     }
     
-    span {
-        font-weight: bold;
-    }
 }
 
 .trans-image {
     @include griditem(1,4,3,4);
-    width:100%;
 }
 

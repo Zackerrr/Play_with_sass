@@ -8,22 +8,23 @@
     
     color:$mediumgrey;
     
+    h2,h3 {
+        font-family: $basefont;
+    }
+    
     h2 {
         font-size:60px;
-        font-family: $headersfont;
-        
     }
     
     h3 {
         font-size:40px;
-        font-family: $headersfont;
     }
     
     h3:after {
         content: '';
         display: block;
         width:100px;
-        height: 5px;
+        height: 20px;
         border-bottom: 3px solid $mediumgrey;;
         margin-left:20px;
     }

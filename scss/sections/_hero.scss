@@ -18,14 +18,12 @@
     h1 {
         color:$ligthgrey;
         font-size: 200px;
-        font-family: $headersfont;
         margin-top: 100px;
     }
     
     h3 {
         color:$darkgrey;
         font-size: 40px;
-        font-family: $headersfont;
         font-weight: bold;
         margin-left: 300px;
         position: relative;
@@ -41,12 +39,8 @@
 }
 
 .hero_text {
-    width:38%;
+    width:43%;
     margin-left: 110px;
-    font-family: $secondfont;
+    font-family: $basefont;
     line-height: $mainline;
-    
-    span {
-        font-weight: bold;
-    }
 }
