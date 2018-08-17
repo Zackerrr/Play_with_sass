@@ -45,3 +45,8 @@
     }
 }
 
+.trans-image {
+    @include griditem(1,4,3,4);
+    width:100%;
+}
+
