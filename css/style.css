@@ -606,7 +606,34 @@ img {
   transition: all 0.15s; }
 
 .footer {
-  grid-column-start: 1;
-  grid-column-end: end;
-  grid-row-start: 3;
-  grid-row-end: 4; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ebebeb;
+  padding: 60px 40px 180px 40px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #515151; }
+  .footer div {
+    width: 20%; }
+  .footer h5 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 15px; }
+  .footer li {
+    line-height: 30px; }
+    .footer li a:hover {
+      color: black; }
+  .footer p {
+    font-size: smaller;
+    line-height: 23px; }

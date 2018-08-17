@@ -1,6 +1,34 @@
-@import 'helpers/variables';
-@import 'helpers/display';
-
-.footer {
-     @include griditem(1,end,3,4);
+.footer { 
+    @include flex;
+    justify-content: space-around;
+    
+    background-color: $ligthgrey;
+    padding:60px 40px 180px 40px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    font-family: $headersfont;
+    color:$darkgrey;
+    
+    div {
+        width:20%;
+    }
+    
+    h5 {
+        font-size:23px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    li {
+        line-height: 30px;
+        
+        a:hover {
+            color:black;
+        }
+    }
+    
+    p {
+        font-size: smaller;
+        line-height: 23px;
+    }
 }
