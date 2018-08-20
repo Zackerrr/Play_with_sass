@@ -7,3 +7,14 @@
 .only-image2 {
      @include griditem(3,7,7,8);
 }
+
+@media (max-width:$mediumwidth) {
+    
+    .only-image1 {
+         @include griditem(1,7,10,11);
+    }
+    
+    .only-image2 {
+         @include griditem(1,7,11,12);
+    }
+}

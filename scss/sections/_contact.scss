@@ -89,9 +89,18 @@
 
 .form_btn:hover {
     background-color: $grey;
-    transition: $hovertrans;
- 
+    transition: $hovertrans;    
+}
+
+@media (max-width:$mediumwidth) {
+    .contact_img {
+        @include griditem(1,7,14,15);
+    }
     
+    .contact {
+        @include griditem(1,7,15,16);
+        margin-left:0;
+    }
 }
 
 

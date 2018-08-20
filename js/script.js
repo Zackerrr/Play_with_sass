@@ -1,4 +1,4 @@
-function debounce(func, wait = 100, immediate = true) {
+function debounce(func, wait = 20, immediate = true) {
       var timeout;
       return function() {
         var context = this, args = arguments;
@@ -30,7 +30,7 @@ function slide(e) {
             sliderImage.classList.add('active');
         } /*else {
             sliderImage.classList.remove('active');
-        }*/
+        }*/ /*if i want to hide image after scroll */
 
     });
 };

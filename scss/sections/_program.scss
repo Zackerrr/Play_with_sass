@@ -25,3 +25,15 @@
      @include griditem(5,7,6,7);
     margin-top: 70px;
 }
+
+@media (max-width:$mediumwidth) {
+    .program {
+        @include griditem(1,7,8,9);
+        margin-top: 0;
+    }
+    
+    .program_img {
+        @include griditem(1,7,9,10);
+        margin-top: 0;
+    }
+}
