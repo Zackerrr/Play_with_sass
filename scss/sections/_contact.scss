@@ -103,4 +103,14 @@
     }
 }
 
+@media (max-width:$smallwidth) {
+    .contact_img {
+        @include griditem(1,7,16,17);
+    }
+    
+    .contact {
+        @include griditem(1,7,17,18);
+    }
+}
+
 

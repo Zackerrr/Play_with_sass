@@ -37,3 +37,13 @@
         margin-top: 0;
     }
 }
+
+@media (max-width:$smallwidth) {
+     .program {
+        @include griditem(1,7,10,11);
+    }
+    
+    .program_img {
+        @include griditem(1,7,11,12);
+    }
+}

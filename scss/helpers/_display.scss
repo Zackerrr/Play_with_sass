@@ -18,7 +18,14 @@
 @media (max-width:$mediumwidth) {
     @mixin gridsystem {
     display: grid;
-    grid-template-rows: 0.7fr 0.3fr 0.1fr 0.2fr 0.5fr 0.4fr 0.1fr 0.2fr 0.2fr 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.7fr 0.3fr 0.1fr 0.2fr 0.5fr 0.1fr 0.05fr 0.2fr 0.2fr 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    }
+}
+
+@media (max-width:$smallwidth) {
+    @mixin gridsystem {
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr 0.1fr 0.2fr 0.5fr 0.4fr 0.1fr 0.1fr 0.1fr 0.1fr 0.2fr 0.2fr 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr;
     }
 }
 

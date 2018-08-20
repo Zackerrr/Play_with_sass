@@ -18,3 +18,14 @@
          @include griditem(1,7,11,12);
     }
 }
+
+
+@media (max-width:$smallwidth) {
+     .only-image1 {
+         @include griditem(1,7,12,13);
+    }
+    
+    .only-image2 {
+         @include griditem(1,7,13,14);
+    }
+}

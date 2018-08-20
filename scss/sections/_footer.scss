@@ -3,7 +3,7 @@
     justify-content: space-around;
     
     background-color: $ligthgrey;
-    padding:60px 40px 180px 40px;
+    padding:60px 40px 150px 40px;
     margin-top: 80px;
     margin-bottom: 80px;
     font-family: $headersfont;
@@ -31,4 +31,26 @@
         font-size: smaller;
         line-height: 23px;
     }
+}
+
+@media (max-width:$smallwidth) {
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding:30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+        div {
+        width:100%;
+        }
+        
+         h5 {
+            margin-top: 15px;
+        }
+    }
+    
+    
+    
 }

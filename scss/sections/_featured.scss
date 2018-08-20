@@ -78,3 +78,27 @@
         @include griditem(4,7,7,8);
     }
 }
+
+@media (max-width:$smallwidth) {
+    
+     .featured {
+         @include griditem(1,7,5,6);
+    }
+    
+    .featured_img1 {
+        @include griditem(1,7,7,8);
+        align-self: center;
+    }
+    
+    .featured_img2 {
+        @include griditem(1,7,6,7);
+    }
+    
+    .featured_img3 {
+        @include griditem(1,7,8,9);
+    }
+
+    .featured_img4 {
+        @include griditem(1,7,9,10);
+    }
+}

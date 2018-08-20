@@ -44,6 +44,10 @@
     .hero {
         @include griditem(1,5,1,2);
         
+          h1 {
+            font-size: 150px;
+        }
+        
         h3 {
            margin-left: 100px; 
         }
@@ -57,4 +61,30 @@
     .hero_img {
         align-self: end;
     }
+}
+
+@media (max-width:$smallwidth) {
+    
+    .hero {
+        
+        @include griditem(1,7,1,2);
+        
+        h1 {
+            font-size: 90px;
+        }
+        
+        h3 {
+            font-size: 30px;
+            margin-left: 50px;
+            position: relative;
+            top:0;     
+            margin-bottom: 50px;
+        }
+    }
+    
+      .hero_img {
+        display: none;
+    }
+        
+
 }
