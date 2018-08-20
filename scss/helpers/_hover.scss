@@ -1,13 +1,11 @@
 .hover_img:hover {
- 	opacity: 1;
+ 	/*opacity: 1;
 	-webkit-animation: flash 3s;
-	animation: flash 3s;
-     -webkit-box-shadow: -2px 1px 30px 5px rgba(124,124,124,0.32);
-    -moz-box-shadow: -2px 1px 30px 5px rgba(124,124,124,0.32);
+	animation: flash 3s;*/
     box-shadow: -2px 1px 30px 5px rgba(124,124,124,0.32); 
 }
 
-@-webkit-keyframes flash {
+/*@-webkit-keyframes flash {
 	0% {
 		opacity: .7;
 	}
@@ -22,7 +20,7 @@
 	100% {
 		opacity: 1;
 	}
-}
+}*/
 
 
 
