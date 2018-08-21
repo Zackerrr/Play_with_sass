@@ -18,9 +18,13 @@
     padding-left: 20px;
 }
 
+.header_menu {
+    width:40%;
+}
+
 .header_nav {
     @include flex;
-    width:40%;
+    width:100%;
     font-family:$secondfont;
     font-size:18px;
     color:$darkgrey;
@@ -46,6 +50,10 @@
     .header_bar {
         display: flex;
         flex-direction: column;
+    }
+    
+    .header_menu {
+        width:100%;
     }
     
     .header_nav {

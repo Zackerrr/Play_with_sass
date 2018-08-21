@@ -232,6 +232,9 @@ span {
   color: #7c7c7c;
   padding-left: 20px; }
 
+.header_menu {
+  width: 40%; }
+
 .header_nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,7 +246,7 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 40%;
+  width: 100%;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   color: #515151;
@@ -274,6 +277,8 @@ span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+  .header_menu {
+    width: 100%; }
   .header_nav {
     margin-top: 10px;
     padding-left: 20px;
