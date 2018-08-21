@@ -79,13 +79,17 @@
             <section class="contact">
                 <h3><span>S</span>ay hello!</h3>
                 <p>you can also check our frequently <span>A</span>sked <span>Q</span>uestions section for help in finding an immediate answer to our most commonly asked questions</p>
-                <form class="contact_form">
+                <form class="contact_form" method="post" action="form.php">
                     <div class="form_items">
-                        <input class="form_item form_item-name" type="text" placeholder="Name">
-                        <input class="form_item" type="email" placeholder="Email">
+                        <input class="form_item form_item-name" type="text" placeholder="Name" name="Name" id="Name">
+                        
+                        <input class="form_item" type="email" placeholder="Email" name="Email" id="Email">
                     </div>
-                    <input type="text" placeholder="Write your message here..." maxlength="1000">
-                    <button class="form_btn">Send</button>
+                    
+                    <input type="text" placeholder="Write your message here..." maxlength="1000" name="Message" id="Message">
+                    
+                    <button class="form_btn" type="submit" name ="submit" value="Submit">Send</button>
+                    
                 </form>
             </section>
         
