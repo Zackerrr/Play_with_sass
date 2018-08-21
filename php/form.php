@@ -1,38 +1,16 @@
 <?php
+if(isset($_POST["submit"])) {
+$recipient = "martawaldon@gmail.com"; //my email
+echo $subject = 'Email message from Weekly Web Dev Form';
+echo $name = $_POST ["Name"];
+echo $email = $_POST["Email"];
+echo  $message = $_POST["yourMessage"];
 
-$EmailFrom = "chriscoyier@gmail.com";
-$EmailTo = "martawaldon@gmail.com";
-$Name = Trim(stripslashes($_POST['Name'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
-$Message = Trim(stripslashes($_POST['Message'])); 
+ $mailBody="Name: $name\nEmail: $email\n\n$message"; 
 
-// validation
-$validationOK=true;
-if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
-  exit;
+ mail($recipient, $subject, $mailBody, "From: $name <$email>");
+
+echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
+
 }
-
-// prepare email body text
-$Body = "";
-$Body .= "Name: ";
-$Body .= $Name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $Email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $Message;
-$Body .= "\n";
-
-// send email 
-$success = mail($EmailTo, $Body, "From: <$EmailFrom>");
-
-// redirect to success page 
-/*if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
-}
-else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
-}*/
 ?>
