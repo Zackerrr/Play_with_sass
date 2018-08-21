@@ -38,6 +38,10 @@
     font-size: 20px;
 }
 
+.nav_menu {
+    display: none;
+}
+
 @media (max-width:$mediumwidth) {
     .header_bar {
         display: flex;
@@ -48,6 +52,35 @@
         margin-top: 10px;
         padding-left: 20px;
         width:75%;
+
+    }
+}
+
+@media (max-width:$smallwidth) {
+    
+    .header_logo {
+        font-size: 40px;
+        padding-left: 0;
+    }
+    
+    .header_bar {
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+
+    }
+    
+     .header_nav {
+        flex-direction: column;
+        width:100%;
+        padding-left: 0;
+        line-height: 27px; 
+    }
+    
+    .nav_menu {
+        display: contents;
+        text-transform: uppercase;
+        font-size: bigger;
     }
 }
 

@@ -262,6 +262,9 @@ span {
   font-weight: bold;
   font-size: 20px; }
 
+.nav_menu {
+  display: none; }
+
 @media (max-width: 950px) {
   .header_bar {
     display: -webkit-box;
@@ -275,6 +278,34 @@ span {
     margin-top: 10px;
     padding-left: 20px;
     width: 75%; } }
+
+@media (max-width: 500px) {
+  .header_logo {
+    font-size: 40px;
+    padding-left: 0; }
+  .header_bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .header_nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    line-height: 27px; }
+  .nav_menu {
+    display: contents;
+    text-transform: uppercase;
+    font-size: bigger; } }
 
 .btn {
   display: -webkit-box;
