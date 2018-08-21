@@ -38,7 +38,7 @@
     font-size: 20px;
 }
 
-.nav_menu {
+.nav_btn {
     display: none;
 }
 
@@ -66,21 +66,34 @@
     .header_bar {
         display: flex;
         flex-direction: row;
-        align-items:flex-start;
-
     }
     
      .header_nav {
+         display: none;
+    }
+    
+    .header_menu {
+        display: flex;
+        flex-direction: column;
+        width:70%;
+    }
+    
+    .nav_show {
+        display: flex;
         flex-direction: column;
         width:100%;
         padding-left: 0;
         line-height: 27px; 
     }
     
-    .nav_menu {
-        display: contents;
+    .nav_btn {
         text-transform: uppercase;
         font-size: bigger;
+        font-family: $headersfont;
+        font-size:20px;
+        font-weight: bold;
+        display: block;
+        align-self: flex-end;
     }
 }
 

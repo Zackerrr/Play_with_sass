@@ -36,3 +36,12 @@ function slide(e) {
 };
 
 window.addEventListener('scroll', debounce(slide));
+
+//menu toggle
+
+const menuBtn = document.querySelector('#nav_btn');
+const menu = document.querySelector('#header_nav');
+
+menuBtn.addEventListener('click', function() {
+     menu.classList.toggle('nav_show');
+});
