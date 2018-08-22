@@ -9,17 +9,17 @@
     font-family: $headersfont;
     color:$darkgrey;
     
-    div {
+    & div {
         width:20%;
     }
     
-    h5 {
+    & h5 {
         font-size:23px;
         font-weight: bold;
         margin-bottom: 15px;
     }
     
-    li {
+    & li {
         line-height: 30px;
         
         a:hover {
@@ -27,7 +27,7 @@
         }
     }
     
-    p {
+    & p {
         font-size: smaller;
         line-height: 23px;
     }
@@ -42,11 +42,11 @@
         margin-top: 30px;
         margin-bottom: 30px;
         
-        div {
+        & div {
         width:100%;
         }
         
-         h5 {
+        & h5 {
             margin-top: 15px;
         }
     }
