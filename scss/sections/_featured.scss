@@ -1,6 +1,3 @@
-@import 'helpers/variables';
-@import 'helpers/display';
-
 .featured {
     @include griditem(1,3,4,5);
     

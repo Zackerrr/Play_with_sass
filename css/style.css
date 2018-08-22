@@ -117,38 +117,35 @@ button::-moz-focus-inner {
   margin-top: 20px;
   cursor: pointer;
   font-size: smaller; }
-
-.btn_icon {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #bbbbbb;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 35px;
-  margin-right: 5px;
-  -ms-flex-item-align: center;
-      align-self: center; }
-  .btn_icon p {
+  .btn_icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #bbbbbb;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 35px;
+    margin-right: 5px;
+    -ms-flex-item-align: center;
+        align-self: center; }
+    .btn_icon p {
+      position: relative;
+      top: -6px; }
+    .btn_icon span {
+      font-weight: bold; }
+  .btn_icon-db {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    border: 15px #e2e2e2 solid; }
+  .btn_trang {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 17.3px;
+    border-color: transparent transparent transparent #515151;
     position: relative;
-    top: -6px; }
-  .btn_icon span {
-    font-weight: bold; }
-
-.btn_icon-db {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  border: 15px #e2e2e2 solid; }
-
-.btn_trang {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 0 10px 17.3px;
-  border-color: transparent transparent transparent #515151;
-  position: relative;
-  top: 8px;
-  left: 11px; }
+    top: 8px;
+    left: 11px; }
 
 .hover_img {
   opacity: 0;
@@ -191,7 +188,11 @@ a:hover {
 img {
   width: 100%; }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Josefin Sans", sans-serif; }
 
 span {
@@ -199,6 +200,7 @@ span {
 
 .container {
   width: 85%;
+  max-width: 1300px;
   margin: auto;
   margin-top: 50px; }
 
@@ -253,6 +255,8 @@ span {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
+  .header_nav li a {
+    cursor: pointer; }
 
 .header_nav a:hover {
   font-weight: bold;
@@ -326,54 +330,8 @@ span {
     font-weight: bold;
     display: block;
     -ms-flex-item-align: end;
-        align-self: flex-end; } }
-
-.btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 20px;
-  cursor: pointer;
-  font-size: smaller; }
-
-.btn_icon {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #bbbbbb;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 35px;
-  margin-right: 5px;
-  -ms-flex-item-align: center;
-      align-self: center; }
-  .btn_icon p {
-    position: relative;
-    top: -6px; }
-  .btn_icon span {
-    font-weight: bold; }
-
-.btn_icon-db {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  border: 15px #e2e2e2 solid; }
-
-.btn_trang {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 0 10px 17.3px;
-  border-color: transparent transparent transparent #515151;
-  position: relative;
-  top: 8px;
-  left: 11px; }
+        align-self: flex-end;
+    cursor: pointer; } }
 
 .hero_img {
   grid-column-start: 5;
@@ -753,53 +711,6 @@ span {
     grid-column-end: 7;
     grid-row-start: 15;
     grid-row-end: 16; } }
-
-.btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 20px;
-  cursor: pointer;
-  font-size: smaller; }
-
-.btn_icon {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #bbbbbb;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 35px;
-  margin-right: 5px;
-  -ms-flex-item-align: center;
-      align-self: center; }
-  .btn_icon p {
-    position: relative;
-    top: -6px; }
-  .btn_icon span {
-    font-weight: bold; }
-
-.btn_icon-db {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  border: 15px #e2e2e2 solid; }
-
-.btn_trang {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 0 10px 17.3px;
-  border-color: transparent transparent transparent #515151;
-  position: relative;
-  top: 8px;
-  left: 11px; }
 
 .contact_img {
   grid-column-start: 1;

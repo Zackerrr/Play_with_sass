@@ -1,7 +1,3 @@
-@import 'helpers/variables';
-@import 'helpers/display';
-@import 'components/buttons';
-
 .contact_img {
     @include griditem(1,5,9,10);
 }

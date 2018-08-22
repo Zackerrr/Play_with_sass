@@ -21,7 +21,11 @@ img {
     width:100%;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: $headersfont;
 }
 
@@ -31,6 +35,7 @@ span {
 
 .container {
     width:85%;
+    max-width:1300px;
     margin:auto;
     margin-top: 50px;
 }
@@ -38,5 +43,6 @@ span {
 .grid_container {
     @include gridsystem;
     width:100%;
+    
 }
 
