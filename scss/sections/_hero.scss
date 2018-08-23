@@ -3,6 +3,14 @@
     margin-top: 30px;
     position: relative;
     right: -7%;
+    
+    @media (max-width:$mediumwidth) {
+        align-self: end;
+    }
+    
+    @media (max-width:$smallwidth) {
+        display: none;
+    }
 }
 
 .hero {
@@ -10,19 +18,48 @@
     
     margin-bottom:100px;
     
-    h1 {
+    & h1 {
         color:$ligthgrey;
         font-size: 200px;
         margin-top: 100px;
     }
     
-    h3 {
+    & h3 {
         color:$darkgrey;
         font-size: 40px;
         font-weight: bold;
         margin-left: 300px;
         position: relative;
         top:-35px;     
+    }
+    
+    @media (max-width:$mediumwidth) {
+        @include griditem(1,5,1,2);
+        
+        & h1 {
+            font-size: 150px;
+        }
+        
+        & h3 {
+           margin-left: 100px; 
+        }
+    }
+    
+    @media (max-width:$smallwidth) {
+        
+        @include griditem(1,7,1,2);
+        
+        & h1 {
+            font-size: 90px;
+        }
+        
+        & h3 {
+            font-size: 30px;
+            margin-left: 50px;
+            position: relative;
+            top:0;     
+            margin-bottom: 50px;
+        }
     }
 
 }
@@ -32,54 +69,10 @@
     margin-left: 110px;
     font-family: $basefont;
     line-height: $mainline;
-}
-
-@media (max-width:$mediumwidth) {
     
-    .hero {
-        @include griditem(1,5,1,2);
-        
-          h1 {
-            font-size: 150px;
-        }
-        
-        h3 {
-           margin-left: 100px; 
-        }
-    }
-    
-    .hero_text {
+    @media (max-width:$mediumwidth) {
         margin-left: 0;
         width:100%;
     }
-    
-    .hero_img {
-        align-self: end;
-    }
 }
 
-@media (max-width:$smallwidth) {
-    
-    .hero {
-        
-        @include griditem(1,7,1,2);
-        
-        h1 {
-            font-size: 90px;
-        }
-        
-        h3 {
-            font-size: 30px;
-            margin-left: 50px;
-            position: relative;
-            top:0;     
-            margin-bottom: 50px;
-        }
-    }
-    
-      .hero_img {
-        display: none;
-    }
-        
-
-}

@@ -2,11 +2,21 @@
     @include griditem(1,4,2,3);
     width:100%;
     height: auto;
+    
+    @media (max-width:$mediumwidth) {
+        @include griditem(1,7,2,3);
+        align-self: center;
+    }
 }
 
 
 .about {
      @include griditem(5,7,2,3);
+    
+    @media (max-width:$mediumwidth) {
+        @include griditem(1,7,3,4);
+        align-self: center;
+    }
     
     .btn {
         font-size:40px;
@@ -17,6 +27,11 @@
 .about_text {
     
     margin-top:100px;
+    
+    @media (max-width:$mediumwidth) {
+         margin-top:50px;
+    }
+    
     
     h3 {
         color: $mediumgrey;
@@ -36,28 +51,12 @@
 .trans-image {
     @include griditem(1,4,3,4);
     align-self: center;
-}
-
-@media (max-width:$mediumwidth) {
     
-    .about_img {
-        @include griditem(1,7,2,3);
-        align-self: center;
-        
-    }
-    
-    .about {
-        @include griditem(1,7,3,4);
-        align-self: center;
-    }
-    
-    .about_text {
-        margin-top:50px;
-    }
-    
-    .trans-image {
-        @include griditem(1,7,4,5);
-        align-self: center;
-    }
+    @media (max-width:$mediumwidth) {
+            @include griditem(1,7,4,5);
+            align-self: center;
 
 }
+}
+
+

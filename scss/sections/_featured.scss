@@ -1,8 +1,15 @@
 .featured {
     @include griditem(1,3,4,5);
     
-    width:70%;
+    @media (max-width:$mediumwidth) {
+        @include griditem(1,4,5,6);
+    }
     
+    @media (max-width:$smallwidth) {
+        @include griditem(1,7,5,6);
+    }
+    
+    width:70%;
     color:$mediumgrey;
     
     h2,h3 {
@@ -36,66 +43,54 @@
 
 .featured_img1 {
     @include griditem(3,7,4,6);
+    
+    @media (max-width:$mediumwidth){
+        @include griditem(1,7,6,7);
+    }
+    
+    @media (max-width:$smallwidth) {
+        @include griditem(1,7,7,8);
+        align-self: center;
+    }
 }
 
 .featured_img2 {
     @include griditem(1,3,5,7);
-    position: relative;
-    top:-170px;
-}
-
-.featured_img3 {
-    @include griditem(3,5,5,6);
-}
-
-.featured_img4 {
-    @include griditem(5,7,5,6);
-}
-
-@media (max-width:$mediumwidth) {
-    .featured {
-        @include griditem(1,4,5,6);
-    }
     
-    .featured_img1 {
-        @include griditem(1,7,6,7);
-    }
-    
-    .featured_img2 {
+    @media (max-width:$mediumwidth) {
         @include griditem(4,7,5,6);
         position: relative;
         top:0;
     }
     
-    .featured_img3 {
-        @include griditem(1,4,7,8);
-    }
-
-    .featured_img4 {
-        @include griditem(4,7,7,8);
-    }
-}
-
-@media (max-width:$smallwidth) {
-    
-     .featured {
-         @include griditem(1,7,5,6);
-    }
-    
-    .featured_img1 {
-        @include griditem(1,7,7,8);
-        align-self: center;
-    }
-    
-    .featured_img2 {
+    @media (max-width:$smallwidth) {
         @include griditem(1,7,6,7);
     }
     
-    .featured_img3 {
+    position: relative;
+    top:-170px;
+}
+
+.featured_img3 {
+    @include griditem(3,5,5,6); 
+    
+    @media (max-width:$mediumwidth) {
+        @include griditem(1,4,7,8);
+    }
+    
+    @media (max-width:$smallwidth) {
         @include griditem(1,7,8,9);
     }
+}
 
-    .featured_img4 {
+.featured_img4 {
+    @include griditem(5,7,5,6);
+    
+    @media (max-width:$mediumwidth) {
+        @include griditem(4,7,7,8);
+    }
+    
+    @media (max-width:$smallwidth) {
         @include griditem(1,7,9,10);
     }
 }

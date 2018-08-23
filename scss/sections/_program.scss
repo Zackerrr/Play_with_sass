@@ -16,31 +16,29 @@
         line-height: 25px;
     }
     
+    @media (max-width:$mediumwidth) {
+        @include griditem(1,7,8,9);
+        margin-top: 0;
+    }
+    
+    @media (max-width:$smallwidth) {
+        @include griditem(1,7,10,11);
+    }
+    
 }
 
 .program_img {
      @include griditem(5,7,6,7);
     margin-top: 70px;
-}
-
-@media (max-width:$mediumwidth) {
-    .program {
-        @include griditem(1,7,8,9);
-        margin-top: 0;
-    }
     
-    .program_img {
+    @media (max-width:$mediumwidth) {
         @include griditem(1,7,9,10);
         margin-top: 0;
     }
+
+    @media (max-width:$smallwidth) {
+            @include griditem(1,7,11,12);
+    }
 }
 
-@media (max-width:$smallwidth) {
-     .program {
-        @include griditem(1,7,10,11);
-    }
-    
-    .program_img {
-        @include griditem(1,7,11,12);
-    }
-}
+

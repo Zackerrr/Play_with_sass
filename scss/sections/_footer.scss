@@ -2,6 +2,7 @@
     @include flex;
     justify-content: space-around;
     
+    
     background-color: $ligthgrey;
     padding:60px 40px 150px 40px;
     margin-top: 80px;
@@ -31,11 +32,8 @@
         font-size: smaller;
         line-height: 23px;
     }
-}
-
-@media (max-width:$smallwidth) {
     
-    .footer {
+    @media (max-width:$smallwidth) {
         display: flex;
         flex-direction: column;
         padding:30px;
@@ -50,7 +48,4 @@
             margin-top: 15px;
         }
     }
-    
-    
-    
 }
